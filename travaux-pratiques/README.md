@@ -22,7 +22,7 @@ L'objectif de ce TP est de comprendre l'interet des ressources Kubernetes de typ
 
 **Pour ceux qui sont en avance (ou qui veulent rouler des mécaniques)...**
 1. Utiliser l'image sdenel/hello-world :
-    * Retenter `k exec -ti mon-premier-prod /bin/sh`
+    * Retenter `k exec -ti mon-premier-prod -- /bin/sh`
     * Comme vous le remarquez, ce n'est pas possible ! l'image ne contient que l'executable nginx et ses dépendances (sans bash ni sh ni aucun gestionnaire de paquet). Elle est distroless. Voir les sources : https://github.com/sdenel/docker-nginx-file-listing
 2. Ajouter une livenessProbe au pod (qui expose actuellement sur le pod 80)
 
